@@ -1,0 +1,160 @@
+
+body{
+    background-image: cover;
+   
+   
+    
+}
+
+input {
+    height: 1.8rem;
+    width: 10rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+h1{
+    text-align: center;
+    font-family:cursive ;
+}
+h2{
+    color:rgb(216, 49, 105);
+}
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+/* Start or stop button */
+.timer-control {
+    width: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(101, 134, 101);
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    cursor: pointer;
+    height: fit-content;
+}
+.timer-control:active {
+    transform: scale(1.02);
+}
+
+/* Timer -> 00:00:00 */
+.timer {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+/* Each section in the timer */
+.time {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.container {
+   
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  #btn{ 
+    
+    background-color: rgb(31, 211, 154);
+    border-radius: 20px;
+    padding: 1rem;
+  
+}
+.btn {
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top: 1.5rem;
+
+}
+
+#btn1{ 
+    
+    background-color: rgb(31, 211, 154);
+    border-radius: 20px;
+    padding: 1rem;
+  
+}
+.btn1 {
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top: 1.5rem;
+
+}
+
+  
+
+
+/* Add these styles to your task.css file */
+
+/* Table styles */
+.entries-table {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Set a maximum width for the table */
+    margin: 0 auto; /* Center the table on the page */
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    max-width: 50%; /* Allow entries to take full width up to the specified max-width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.entries-heading {
+    font-weight: bold;
+}
+
+
+
+/* Task, Description, and Duration styles */
+#taskName,
+#taskDescription,
+#taskDuration {
+    flex: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 200px) {
+    .entry {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #taskName,
+    #taskDescription,
+    #taskDuration {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
